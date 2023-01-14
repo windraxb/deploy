@@ -1,0 +1,46 @@
+{
+  "name": "@windraxb/ftp-deploy",
+  "version": "1.0.0",
+  "description": "FTP uploads local files to the server",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./index/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "typescript",
+    "upload"
+  ],
+  "author": "windraxb",
+  "license": "MIT",
+  "dependencies": {
+    "colorette": "^2.0.19",
+    "upath": "^2.0.1"
+  },
+  "devDependencies": {
+    "tsup": "^6.5.0"
+  }
+}

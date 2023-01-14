@@ -1,0 +1,12 @@
+{
+  "name": "@windraxb/deploy",
+  "version": "1.0.0",
+  "description": "auto deploy project",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "pnpm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
