@@ -1,6 +1,6 @@
 {
   "name": "@windraxb/ftp-deploy",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "FTP uploads local files to the server",
   "main": "dist/index.js",
   "module": "dist/index.js",
