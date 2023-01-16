@@ -1,7 +1,7 @@
 // @ts-nocheck
 import fs from 'fs'
 import path from 'path'
-import { Promise } from 'bluebird'
+import Promise from 'bluebird'
 import read from 'read'
 import minimatch from 'minimatch'
 import { UserConfig } from './interface/IUserConfig';
