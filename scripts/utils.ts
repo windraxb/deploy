@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { readdirSync, existsSync } from 'fs';
-import { execa } from 'execa';
+import execa from 'execa';
 import prompts from 'prompts'
 import { bgYellow, bgCyan, bgGreen, bgRed, yellow, cyan, green, red, lightBlue } from 'kolorist'
 
@@ -74,7 +74,7 @@ export async function getPackageInfo(inputPkg: string) {
     throw new Error(`Release package ${pkgName} not found`)
   }
 
-  const pkg = require(pkgPath)
+  const pkg = await import(pkgPath)
 
   if (pkg.private) {
     throw new Error(`Release package ${pkgName} is private`)

@@ -3,7 +3,6 @@ import minimist from 'minimist'
 import semver from 'semver'
 import prompts from 'prompts'
 import { logger, run, dryRun, getPackageInfo } from './utils'
-// import { logger, getPackageInfo } from './utils'
 
 import type { ReleaseType } from 'semver'
 
