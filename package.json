@@ -14,10 +14,12 @@
   "author": "windraxb",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
     "@types/minimist": "^1.2.2",
     "@types/node": "^18.11.18",
     "@types/prompts": "^2.4.2",
     "@types/semver": "^7.3.13",
+    "conventional-changelog-cli": "^2.2.2",
     "execa": "5.1.1",
     "kolorist": "^1.6.0",
     "minimist": "^1.2.7",
