@@ -1,4 +1,4 @@
-# @windraxb/deploy
+# @windraxb/ftp-deploy
 
 ## 配置说明
 
