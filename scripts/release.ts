@@ -89,9 +89,7 @@ async function main() {
     'CHANGELOG.md',
     '-s',
     '--commit-path',
-    '.',
-    '--lerna-package',
-    pkgName
+    '.'
   ]
 
   await run('npx', changelogArgs, { cwd: pkgDir })

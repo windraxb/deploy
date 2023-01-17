@@ -74,7 +74,7 @@ export async function getPackageInfo(inputPkg: string) {
     throw new Error(`Release package ${pkgName} not found`)
   }
 
-  const pkg = await import(pkgPath)
+  const pkg = require(pkgPath)
 
   if (pkg.private) {
     throw new Error(`Release package ${pkgName} is private`)
